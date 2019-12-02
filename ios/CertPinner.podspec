@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   CertPinner
                    DESC
-  s.homepage     = "https://github.com/approov/react-native-cert-pinner"
+  s.homepage     = "https://github.com/wymsee/react-native-cert-pinner"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
