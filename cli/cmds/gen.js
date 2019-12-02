@@ -1,4 +1,5 @@
 const fs = require('fs');
+const mkdirp = require('mkdirp');
 const path = require('path');
 var plist = require('plist');
 
@@ -44,7 +45,9 @@ module.exports = (args) => {
     Log.warn(`Android project not found: ${andBase}`);
   }
 
-  const andPath = `${andBase}/app/src/main/java/com/criticalblue/reactnative/GeneratedCertificatePinner.java`;
+  let andPath = `${andBase}/app/src/main/java/com/criticalblue/reactnative/`;
+  mkdirp.sync(andPath);
+  andPath += `GeneratedCertificatePinner.java`;
 
   // prep ios project path
   
